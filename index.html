@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enguri Tower - Cuisine of the Georgian highlands."
+    />
+    <title>Enguri Tower | Cuisine of the Highlands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="brand">
+          <span class="brand-name">ENGURI</span>
+          <span class="brand-sub">TOWER</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#menu">
+            <span class="lang-en">Menu</span>
+            <span class="lang-ka">მენიუ</span>
+          </a>
+          <a href="#contact">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ka">კონტაქტი</span>
+          </a>
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="ka" aria-pressed="false">KA</button>
+          </div>
+          <div class="season-toggle" role="group" aria-label="Season">
+            <button class="season-btn" data-season="winter" aria-pressed="false" title="Winter" aria-label="Winter">&#10052;</button>
+            <span class="lang-sep">|</span>
+            <button class="season-btn active" data-season="summer" aria-pressed="true" title="Summer" aria-label="Summer">&#9728;</button>
+          </div>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="snow-field" id="snowField" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="lang-en">Svaneti &middot; Georgia</span>
+            <span class="lang-ka">სვანეთი &middot; საქართველო</span>
+          </p>
+          <h1 class="hero-title">ENGURI</h1>
+          <span class="hero-sub-label">TOWER</span>
+        </div>
+        <a href="#menu" class="scroll-indicator" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">
+              <span class="lang-en">The Kitchen</span>
+              <span class="lang-ka">სამზარეულო</span>
+            </p>
+            <h2 class="section-title">
+              <span class="lang-en">Our menu</span>
+              <span class="lang-ka">ჩვენი მენიუ</span>
+            </h2>
+            <span class="rule"></span>
+          </div>
+
+          <div class="dish-grid">
+            <a class="dish-card dish-link" href="dishes.html">
+              <div class="dish-image dish-dishes" aria-hidden="true"></div>
+              <div class="dish-body">
+                <h3>
+                  <span class="lang-en">Dishes</span>
+                  <span class="lang-ka">კერძები</span>
+                </h3>
+                <span class="rule"></span>
+                <p>
+                  <span class="lang-en">
+                    Khachapuri, khinkali, mtsvadi and the hearty plates of the
+                    Georgian highlands.
+                  </span>
+                  <span class="lang-ka">
+                    ხაჭაპური, ხინკალი, მწვადი და ქართული მთიანეთის
+                    გემრიელი კერძები.
+                  </span>
+                </p>
+                <span class="dish-price">
+                  <span class="lang-en">View Menu</span>
+                  <span class="lang-ka">მენიუს ნახვა</span>
+                </span>
+              </div>
+            </a>
+
+            <a class="dish-card dish-link" href="drinks.html">
+              <div class="dish-image dish-drinks" aria-hidden="true"></div>
+              <div class="dish-body">
+                <h3>
+                  <span class="lang-en">Drinks</span>
+                  <span class="lang-ka">სასმელები</span>
+                </h3>
+                <span class="rule"></span>
+                <p>
+                  <span class="lang-en">
+                    Coffee, wine, chacha, cocktails and cold highland waters.
+                  </span>
+                  <span class="lang-ka">
+                    ყავა, ღვინო, ჭაჭა, კოქტეილები და ცივი მთის წყლები.
+                  </span>
+                </p>
+                <span class="dish-price">
+                  <span class="lang-en">View Menu</span>
+                  <span class="lang-ka">მენიუს ნახვა</span>
+                </span>
+              </div>
+            </a>
+
+            <a class="dish-card dish-link" href="desserts.html">
+              <div class="dish-image dish-desserts" aria-hidden="true"></div>
+              <div class="dish-body">
+                <h3>
+                  <span class="lang-en">Desserts</span>
+                  <span class="lang-ka">დესერტები</span>
+                </h3>
+                <span class="rule"></span>
+                <p>
+                  <span class="lang-en">
+                    Brownies, cheesecake, Belgian waffles and sweet things.
+                  </span>
+                  <span class="lang-ka">
+                    ბრაუნი, ჩიზქეიქი, ბელგიური ვაფლი და ტკბილი საგანძური.
+                  </span>
+                </p>
+                <span class="dish-price">
+                  <span class="lang-en">View Menu</span>
+                  <span class="lang-ka">მენიუს ნახვა</span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-info contact-centered">
+            <p class="section-eyebrow">
+              <span class="lang-en">Contact</span>
+              <span class="lang-ka">კონტაქტი</span>
+            </p>
+            <h2 class="section-title">
+              <span class="lang-en">The place you keep coming back to.</span>
+              <span class="lang-ka">ადგილი, სადაც ყოველთვის ბრუნდები.</span>
+            </h2>
+            <span class="rule"></span>
+            <ul class="contact-list">
+              <li>
+                <strong>
+                  <span class="lang-en">Phone</span>
+                  <span class="lang-ka">ტელეფონი</span>
+                </strong>
+                <a href="tel:+995557533571">+995 557 533 571</a>
+              </li>
+            </ul>
+            <div class="contact-actions">
+              <a
+                href="https://www.instagram.com/ushguli_enguri_tower"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >Instagram</a>
+              <a
+                href="https://www.facebook.com/share/1EehbcJi3u/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >Facebook</a>
+              <a
+                href="https://www.tiktok.com/@enguritower"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >TikTok</a>
+              <a
+                href="https://www.google.com/maps/place/Enguri+Tower/@42.9155616,43.0113449,17z/data=!4m6!3m5!1s0x405bb8790fb25a5d:0x3c9f4476089a1a04!8m2!3d42.9155616!4d43.0113449!16s%2Fg%2F11fxb3dl4j"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                <span class="lang-en">Open in Google Maps</span>
+                <span class="lang-ka">Google Maps-ზე ნახვა</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-slim">
+      <div class="container">
+        <div class="footer-bottom">
+          <p class="copy">&copy; <span id="year"></span> &middot; Enguri Tower</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
