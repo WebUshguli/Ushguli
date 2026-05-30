@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-season="summer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enguri Tower - Cuisine of the Georgian highlands."
+    />
+    <title>Enguri Tower | Cuisine of the Highlands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="brand">
+          <span class="brand-name">
+            <span class="lang-en">MENU</span>
+            <span class="lang-ka">მენიუ</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#menu">
+            <span class="lang-en">Menu</span>
+            <span class="lang-ka">მენიუ</span>
+          </a>
+          <a href="#contact">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ka">კონტაქტი</span>
+          </a>
+          <div class="season-toggle" role="group" aria-label="Season">
+            <button class="season-btn active" data-season="summer" aria-pressed="true" title="Summer" aria-label="Summer">&#9728;</button>
+            <span class="lang-sep">|</span>
+            <button class="season-btn" data-season="winter" aria-pressed="false" title="Winter" aria-label="Winter">&#10052;</button>
+          </div>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="hero-lang-toggle lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-sep">|</span>
+        <button type="button" class="lang-btn" data-lang="ka" aria-pressed="false">KA</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="snow-field" id="snowField" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="lang-en">Svaneti &middot; Georgia</span>
+            <span class="lang-ka">სვანეთი &middot; საქართველო</span>
+          </p>
+          <h1 class="hero-title">ENGURI</h1>
+          <span class="hero-sub-label">TOWER</span>
+        </div>
+
+        <div class="hero-menu-btns" id="menu">
+          <a href="dishes.html" class="hero-menu-btn hero-menu-btn--dishes" aria-label="Dishes menu">
+            <span class="hero-menu-btn-label">
+              <span class="lang-en">Dishes</span>
+              <span class="lang-ka">კერძები</span>
+            </span>
+          </a>
+          <a href="drinks.html" class="hero-menu-btn hero-menu-btn--drinks" aria-label="Drinks menu">
+            <span class="hero-menu-btn-label">
+              <span class="lang-en">Drinks</span>
+              <span class="lang-ka">სასმელები</span>
+            </span>
+          </a>
+          <a href="desserts.html" class="hero-menu-btn hero-menu-btn--desserts" aria-label="Desserts menu">
+            <span class="hero-menu-btn-label">
+              <span class="lang-en">Desserts</span>
+              <span class="lang-ka">დესერტები</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="hero-social-btns">
+          <a
+            href="https://www.instagram.com/ushguli_enguri_tower"
+            target="_blank"
+            rel="noopener"
+            class="hero-menu-btn hero-social-btn hero-social-btn--instagram"
+            aria-label="Instagram"
+          >
+            <span class="hero-social-btn-inner">
+              <span class="hero-menu-btn-label hero-social-label">Instagram</span>
+              <span class="hero-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#feda75" />
+                      <stop offset="25%" stop-color="#fa7e1e" />
+                      <stop offset="50%" stop-color="#d62976" />
+                      <stop offset="75%" stop-color="#962fbf" />
+                      <stop offset="100%" stop-color="#4f5bd5" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#ig-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-8.001 3.999 3.999 0 010 8.001zm6.406-11.845a1.44 1.44 0 11-2.881.001 1.44 1.44 0 012.881-.001z" />
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a
+            href="https://www.facebook.com/share/1EehbcJi3u/"
+            target="_blank"
+            rel="noopener"
+            class="hero-menu-btn hero-social-btn hero-social-btn--facebook"
+            aria-label="Facebook"
+          >
+            <span class="hero-social-btn-inner">
+              <span class="hero-menu-btn-label hero-social-label">Facebook</span>
+              <span class="hero-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a
+            href="https://www.tiktok.com/@enguritower"
+            target="_blank"
+            rel="noopener"
+            class="hero-menu-btn hero-social-btn hero-social-btn--tiktok"
+            aria-label="TikTok"
+          >
+            <span class="hero-social-btn-inner">
+              <span class="hero-menu-btn-label hero-social-label">TikTok</span>
+              <span class="hero-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#25F4EE"
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.07 6.07 0 0 0-1-.05A6.34 6.34 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                    transform="translate(-0.9, 0.9)"
+                  />
+                  <path
+                    fill="#FE2C55"
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.07 6.07 0 0 0-1-.05A6.34 6.34 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                    transform="translate(0.9, -0.9)"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.07 6.07 0 0 0-1-.05A6.34 6.34 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a
+            href="https://www.google.com/maps/place/Enguri+Tower/@42.9155616,43.0113449,17z/data=!4m6!3m5!1s0x405bb8790fb25a5d:0x3c9f4476089a1a04!8m2!3d42.9155616!4d43.0113449!16s%2Fg%2F11fxb3dl4j"
+            target="_blank"
+            rel="noopener"
+            class="hero-menu-btn hero-social-btn hero-social-btn--maps"
+            aria-label="Google Maps"
+          >
+            <span class="hero-social-btn-inner">
+              <span class="hero-menu-btn-label hero-social-label">
+                <span class="lang-en">Maps</span>
+                <span class="lang-ka">რუკა</span>
+              </span>
+              <span class="hero-social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                  <circle fill="#FBBC04" cx="12" cy="9" r="2.5" />
+                  <path fill="#34A853" d="M12 2c1.73 0 3.32.58 4.59 1.55C14.95 5.05 13 7.2 13 9.5c0 .28.03.55.08.81C10.6 9.1 8.5 6.8 8.5 4c.97-.64 2.12-1 3.5-1z" />
+                  <path fill="#4285F4" d="M12 2c2.47 0 4.68 1.01 6.29 2.64C16.7 6.5 14.5 8.5 12 8.5c-.28 0-.55-.03-.81-.08.05-.26.08-.53.08-.81 0-2.3-1.95-4.45-3.59-5.95A6.96 6.96 0 0112 2z" />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <a href="#contact" class="scroll-indicator" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-info contact-centered">
+            <p class="section-eyebrow">
+              <span class="lang-en">Contact</span>
+              <span class="lang-ka">კონტაქტი</span>
+            </p>
+            <h2 class="section-title">
+              <span class="lang-en">The place you keep coming back to.</span>
+              <span class="lang-ka">ადგილი, სადაც ყოველთვის ბრუნდები.</span>
+            </h2>
+            <span class="rule"></span>
+            <ul class="contact-list">
+              <li>
+                <strong>
+                  <span class="lang-en">Phone</span>
+                  <span class="lang-ka">ტელეფონი</span>
+                </strong>
+                <a href="tel:+995557533571">+995 557 533 571</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-slim">
+      <div class="container">
+        <div class="footer-bottom">
+          <p class="copy">&copy; <span id="year"></span> &middot; Enguri Tower</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
