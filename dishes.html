@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-season="summer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enguri Tower - Dishes menu. Cold dishes, BBQ, hot dishes, soups, bakery, breakfast and garnish."
+    />
+    <title>Dishes | Enguri Tower</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <span class="brand-name">
+            <span class="lang-en">HOME</span>
+            <span class="lang-ka">მთავარი</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="menu.html">
+            <span class="lang-en">Menu</span>
+            <span class="lang-ka">მენიუ</span>
+          </a>
+          <a href="contact.html">
+            <span class="lang-en">Contact</span>
+            <span class="lang-ka">კონტაქტი</span>
+          </a>
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-sep">|</span>
+            <button type="button" class="lang-btn" data-lang="ka" aria-pressed="false">KA</button>
+          </div>
+          <div class="season-toggle" role="group" aria-label="Season">
+            <button class="season-btn active" data-season="summer" aria-pressed="true" title="Summer" aria-label="Summer">&#9728;</button>
+            <span class="lang-sep">|</span>
+            <button class="season-btn" data-season="winter" aria-pressed="false" title="Winter" aria-label="Winter">&#10052;</button>
+          </div>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <p class="eyebrow">
+          <span class="lang-en">The Kitchen</span>
+          <span class="lang-ka">სამზარეულო</span>
+        </p>
+        <h1 class="page-header-title">
+          <span class="lang-en">Dishes</span>
+          <span class="lang-ka">კერძები</span>
+        </h1>
+      </section>
+
+      <section class="menu-page">
+        <div class="container">
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Cold Dish</span>
+              <span class="lang-ka">ცივი კერძები</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Chef's Salad</span><span class="lang-ka">შეფის სალათი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">35.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Cucumber-Tomato Salad with Nuts</span><span class="lang-ka">კიტრი-პომიდვრის სალათი ნიგვზით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">17.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Cucumber, tomato, walnut, greens, onion, spices.</span><span class="lang-ka">კიტრი, პომიდორი, ნიგოზი, მწვანილი, ხახვი, სანელებლები.</span></p>
+                </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Cucumber-Tomato Salad </span><span class="lang-ka">კიტრი-პომიდვრის სალათი </span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Cucumber, tomato, greens, onion.</span><span class="lang-ka">კიტრი, პომიდორი, მწვანილი, ხახვი.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Greek Salad</span><span class="lang-ka">ბერძნული სალათი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">20.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Lettuce leaves, cherry, cucumber, Bulgarian pepper, olive, special sauce, feta, oregano.</span><span class="lang-ka">სალათის ფოთოლი, ჩერი, კიტრი, ბულგარული წიწაკა, ზეთისხილი, საფირმო სოუსი, ფეტა, ორეგანო.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Chicken Salad</span><span class="lang-ka">ქათმის სალათი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">17.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Chicken breast, vegetables, mayonnaise, spices.</span><span class="lang-ka">ქათმის მკერდი, ბოსტნეული, მაიონეზი, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Georgian Cheese</span><span class="lang-ka">ქართული ყველი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Eggplants with Walnut</span><span class="lang-ka">ბადრიჯანი ნიგვზით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">16.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Adjapsandali</span><span class="lang-ka">აჯაფსანდალი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Eggplant, vegetable mix, spices.</span><span class="lang-ka">ბადრიჯანი, ბოსტნეულის მიქსი, სანელებლები.</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">BBQ</span>
+              <span class="lang-ka">მწვადეული</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Grilled Pork</span><span class="lang-ka">ღორის მწვადი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">19.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Grilled Chicken</span><span class="lang-ka">ქათმის მწვადი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Grilled Chicken Steak</span><span class="lang-ka">ქათმის სტეიკი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">35.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Signature Burger</span><span class="lang-ka">საფირმო ბურგერი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">30.00</span></div></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Hot Dish</span>
+              <span class="lang-ka">ცხელი კერძები</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Chakondrili</span><span class="lang-ka">ჩაქონდრილი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">38.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Onion, beef, pomegranate, coriander, savory, garlic, spices.</span><span class="lang-ka">ხახვი, საქონლის ხორცი, ბროწეული, ქინძი, ქონდარი, უცხო სუნელი, ნიორი.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Ostri</span><span class="lang-ka">ოსტრი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Soft meat, tomato, greens, pepper, spices.</span><span class="lang-ka">საქონლის რბილი ხორცი, პომიდორი, მწვანილი, წიწაკა, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Chicken Heart-Liver in a Clay Pan</span><span class="lang-ka">ქათმის გულ-ღვიძლი კეცზე</span></span><span class="menu-item-dots"></span><span class="menu-item-price">16.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Chicken heart and liver, vegetables, spices.</span><span class="lang-ka">ქათმის გულ-ღვიძლი, ბოსტნეული, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Ojakhuri with Pork</span><span class="lang-ka">ოჯახური ღორის ხორცით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">21.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Pork, potatoes, vegetables, spices.</span><span class="lang-ka">ღორის ხორცი, კარტოფილი, ბოსტნეული, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Ojakhuri with Chicken</span><span class="lang-ka">ოჯახური ქათმის ხორცით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">19.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Chicken, potatoes, spices.</span><span class="lang-ka">ქათმის ხორცი, კარტოფილი, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Homemade Potatoes with Onion</span><span class="lang-ka">კარტოფილი გლეხურად</span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Fried potatoes, onion, spices.</span><span class="lang-ka">შემწვარი კარტოფილი, ხახვი, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Shkmeruli</span><span class="lang-ka">შქმერული</span></span><span class="menu-item-dots"></span><span class="menu-item-price">35.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Fried chicken, garlic, cream.</span><span class="lang-ka">შემწვარი წიწილა, ნიორი, ნაღები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Tabaka in a Clay Pan</span><span class="lang-ka">ტაბაკა კეცზე</span></span><span class="menu-item-dots"></span><span class="menu-item-price">27.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Fried chicken, pressed flat.</span><span class="lang-ka">შემწვარი წიწილა.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Fried Trout</span><span class="lang-ka">შემწვარი კალმახი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">22.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Beans in a Pot</span><span class="lang-ka">ლობიო ქოთანში</span></span><span class="menu-item-dots"></span><span class="menu-item-price">16.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Beans, greens, spices, cornbread.</span><span class="lang-ka">ლობიო, მწვანილი, სანელებლები, მჭადი.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Tashmijabi</span><span class="lang-ka">თაშმიჯაბი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">17.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Svanetian national dish &mdash; potatoes with cheese.</span><span class="lang-ka">სვანური ტრადიციული კერძი &mdash; კარტოფილი ყველით.</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Soup</span>
+              <span class="lang-ka">წვნიანი</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Svanuri</span><span class="lang-ka">სვანური</span></span><span class="menu-item-dots"></span><span class="menu-item-price">15.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Svanetian soup.</span><span class="lang-ka">.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Soup Kharcho</span><span class="lang-ka">სუპ-ხარჩო</span></span><span class="menu-item-dots"></span><span class="menu-item-price">17.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Beef Meat, rice, tomatoes, spices.</span><span class="lang-ka">საქონლის ხორცი, ბრინჯი, პომიდორი, სანელებლები.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Vegetarian Soup</span><span class="lang-ka">ვეგეტარიანული სუპი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Garden vegetable soup.</span><span class="lang-ka">ბოსტნეულის წვნიანი.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Dumpling Soup</span><span class="lang-ka">პელმენის სუპი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">19.00</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Bakery</span>
+              <span class="lang-ka">საცხობი</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Svanetian Board</span><span class="lang-ka">სვანური დაფა</span></span><span class="menu-item-dots"></span><span class="menu-item-price">89.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Kubdari, Khachapuri with millet, Kartoplari (potatoes with cheese), cornbread with cheese.</span><span class="lang-ka">კუბდარი, ფეტვიანი, კარტოფლარი,ჭვიშტარი.</span></p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Kubdari (6 Slices)</span><span class="lang-ka">კუბდარი (6 ნაჭერი)</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Svanetian national dish &mdash; beef, Svanetian spices.</span><span class="lang-ka">საქონლის ხორცი, სვანური სანელებლები.</span></p>
+                 </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Kubdari (4 Slices)</span><span class="lang-ka">კუბდარი (4 ნაჭერი)</span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Svanetian national dish &mdash; beef, Svanetian spices.</span><span class="lang-ka">საქონლის ხორცი, სვანური სანელებლები.</span></p>
+              </li>
+               <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Kartoplari</span><span class="lang-ka">კარტოფლარი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">15.00</span></div>
+                <p class="menu-item-desc"><span class="lang-en">Potatoes with cheese.</span><span class="lang-ka">კარტოფილი ყველით.</span></p>
+              </li>
+               <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Khachapuri with millet</span><span class="lang-ka">ხაჭაპური ფეტვით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Imeretian Khachapuri (6 Slices)</span><span class="lang-ka">იმერული ხაჭაპური (6 ნაჭერი)</span></span><span class="menu-item-dots"></span><span class="menu-item-price">16.00</span></div>
+                 </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Imeretian Khachapuri (4 Slices)</span><span class="lang-ka">იმერული ხაჭაპური (4 ნაჭერი)</span></span><span class="menu-item-dots"></span><span class="menu-item-price">12.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Megrelian Khachapuri</span><span class="lang-ka">მეგრული ხაჭაპური</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Adjarian Khachapuri</span><span class="lang-ka">აჭარული ხაჭაპური</span></span><span class="menu-item-dots"></span><span class="menu-item-price">24.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Lobiani</span><span class="lang-ka">ლობიანი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">15.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Pepperoni Pizza</span><span class="lang-ka">პიცა პეპერონი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">28.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Margarita Pizza</span><span class="lang-ka">პიცა მარგარიტა</span></span><span class="menu-item-dots"></span><span class="menu-item-price">26.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Cornbread</span><span class="lang-ka">მჭადი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">4.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Bread</span><span class="lang-ka">პური</span></span><span class="menu-item-dots"></span><span class="menu-item-price">3.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Cornbread with Cheese and Millet</span><span class="lang-ka">ჭვიშტარი ფეტვით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">8.00</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Breakfast (Until 12:00)</span>
+              <span class="lang-ka">საუზმე (12:00-მდე)</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Omelette</span><span class="lang-ka">ომლეტი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">10.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">English Breakfast</span><span class="lang-ka">ინგლისური საუზმე</span></span><span class="menu-item-dots"></span><span class="menu-item-price">18.00</span></div></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Garnish</span>
+              <span class="lang-ka">გარნირი</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Fries</span><span class="lang-ka">კარტოფილი ფრი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">8.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Mexican Potatoes</span><span class="lang-ka">მექსიკური კარტოფილი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">13.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Rice with Vegetables</span><span class="lang-ka">ბრინჯი ბოსტნეულით</span></span><span class="menu-item-dots"></span><span class="menu-item-price">14.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Mashed Potatoes</span><span class="lang-ka">პიურე</span></span><span class="menu-item-dots"></span><span class="menu-item-price">7.00</span></div></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Beer Menu (Food)</span>
+              <span class="lang-ka">ლუდის მენიუ </span>
+            </h2>
+            <ul class="menu-list">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Chicken Nuggets</span><span class="lang-ka">ქათმის ნაგეცი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">20.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Garlic Bread</span><span class="lang-ka">ნივრიანი პურები</span></span><span class="menu-item-dots"></span><span class="menu-item-price">7.00</span></div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Cheese Sticks</span><span class="lang-ka">ყველის ჩხირები</span></span><span class="menu-item-dots"></span><span class="menu-item-price">20.00</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h2 class="menu-group-title">
+              <span class="lang-en">Sauce</span>
+              <span class="lang-ka">სოუსი</span>
+            </h2>
+            <ul class="menu-list">
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Tkemali</span><span class="lang-ka">ტყემალი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">3.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Satsebeli (Gravy)</span><span class="lang-ka">საწებელი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">3.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Ketchup</span><span class="lang-ka">კეტჩუპი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">3.00</span></div></li>
+              <li class="menu-item"><div class="menu-item-head"><span class="menu-item-name"><span class="lang-en">Mayonnaise</span><span class="lang-ka">მაიონეზი</span></span><span class="menu-item-dots"></span><span class="menu-item-price">3.00</span></div></li>
+            </ul>
+          </div>
+
+          <div class="back-wrap">
+            <a href="menu.html" class="back-link">
+              <span class="lang-en">Back to Menu</span>
+              <span class="lang-ka">მენიუზე დაბრუნება</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-slim">
+      <div class="container">
+        <div class="footer-bottom">
+          <p class="copy">&copy; <span id="year"></span> &middot; Enguri Tower</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
